@@ -1,0 +1,22 @@
+*{
+    box-sizing:border-box;
+}
+#row{
+    display:flex;
+}
+.col{
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+.col img{
+    margin:5px;
+    width:100%;
+    aspect-ratio:auto;
+}
+#row::after{
+    content:"";
+    display:table;
+    clear:both;
+}
